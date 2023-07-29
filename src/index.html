@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="/dist/output.css" rel="stylesheet">
   <script src="main.js"></script>
+  <title>RPG | Card Game</title>
 </head>
 <body class="flex h-screen justify-center items-center bg-slate-700">
     <!--<section class="mb-28">
@@ -18,10 +19,35 @@
         <button class="transition-all mt-6 gameFont font-bold text-6xl hover:text-slate-100">Play</button>
     </section>
 -->
-    <section class="allDeck">
-        <div class="cards">
-            
-        </div>
+    <section class="allDeck grid grid-cols-4 p-6 bg-slate-500 w-4/5 h-5/6">
+        <article class="cards transition-all cursor-pointer hover:scale-110 border-4 border-orange-400 flex p-5 flex-col justify-center items-center bg-orange-800 shadow-slate-700 shadow-xl w-56 h-72 rounded-xl">
+            <h5 class="text-white mb-3 text-3xl font-bold gameFont">Broken Shield</h5>
+            <i class="fa-solid fa-shield-halved text-white text-6xl"></i>
+            <p class="text-white mt-8 text-2xl font-bold gameFont">
+                This card give the conjurer 10 points of shield.
+            </p>
+        </article>
+        <article class="cards transition-all cursor-pointer hover:scale-110 border-4 border-orange-400 flex p-5 flex-col justify-center items-center bg-orange-800 shadow-slate-700 shadow-xl w-56 h-72 rounded-xl">
+            <h5 class="text-white mb-3 text-3xl font-bold gameFont">Dad Sword's</h5>
+            <i class="fa-solid fa-khanda text-white text-6xl"></i>
+            <p class="text-white mt-8 text-2xl font-bold gameFont">
+                This card decreases the opponent's HP by 15 points.
+            </p>
+        </article>
+        <article class="cards transition-all cursor-pointer hover:scale-110 border-4 border-orange-400 flex p-5 flex-col justify-center items-center bg-orange-800 shadow-slate-700 shadow-xl w-56 h-72 rounded-xl">
+            <h5 class="text-white mb-3 text-3xl font-bold gameFont">Resilience</h5>
+            <i class="fa-solid fa-heart text-white text-6xl"></i>
+            <p class="text-white mt-8 text-2xl font-bold gameFont">
+                This card heal your life in 5 points.
+            </p>
+        </article>
+        <article class="cards transition-all cursor-pointer hover:scale-110 border-4 border-orange-400 flex p-5 flex-col justify-center items-center bg-orange-800 shadow-slate-700 shadow-xl w-56 h-72 rounded-xl">
+            <h5 class="text-white mb-3 text-3xl font-bold gameFont">Fire Spell</h5>
+            <i class="fa-solid fa-fire text-white text-6xl"></i>
+            <p class="text-white mt-5 text-2xl font-bold gameFont">
+                This card casts a spell that burns your opponent by reducing 2 HP per Turn.
+            </p>
+        </article>
     </section>
 </body>
 </html>
