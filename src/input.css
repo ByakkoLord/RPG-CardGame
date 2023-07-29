@@ -6,4 +6,9 @@
     .gameFont{
         font-family: 'Handjet', cursive;
     }
+
+    .zics {
+        transform: rotateX(60deg); /* Ajuste o ângulo conforme desejado */
+        transform-origin: center; /* Ponto de rotação no centro da div */
+      }
 }
